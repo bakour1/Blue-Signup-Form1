@@ -1,0 +1,188 @@
+* {
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+:root {
+  --bg-blue: #2196F3;
+  --bg-white: #FFFFFF;
+  --c-gry: #999999;
+  --c-black: #686770;
+
+}
+
+html {
+  font-size: 13px;
+}
+
+@media (min-width:360px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: var(--bg-blue);
+  padding: 1.7625rem;
+}
+
+.wrapper .card {
+  background-color: var(--bg-white);
+  width: 18.75rem;
+  min-height: 31rem;
+  padding: 1.5625rem;
+  border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+}
+
+.wrapper .card .title {
+  width: 100%;
+  height: 2.125rem;
+  line-height: 2.125rem;
+  margin-block: -0.3125rem;
+}
+
+.wrapper .card h2 {
+  width: 100%;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  /* bottom 60 */
+}
+
+.wrapper .card form {
+  margin-top: 1rem;
+}
+
+.wrapper .card form>.input {
+  height: 2.4375rem;
+  border-bottom: .0625rem solid #ddd;
+  margin-bottom: .9375rem;
+  font-size: .8125rem;
+  color: var(--c-gry);
+  line-height: 2.125rem;
+}
+
+.wrapper .card form>.input input {
+  outline: none;
+  border: none;
+  padding-left: .3125rem;
+}
+
+.wrapper .card form .log {
+  width: 100%;
+  height: 2.4rem;
+  margin-top: -0.125rem;
+}
+
+.wrapper .card form .log input {
+  background-color: var(--bg-blue);
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  color: var(--bg-white);
+  font-size: 1rem;
+  text-transform: none;
+  font-variant: small-caps;
+  font-weight: 700;
+  border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+}
+
+.wrapper .card .question {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  color: var(--c-gry);
+  font-size: .75rem;
+  text-transform: none;
+  text-align: center;
+  position: relative;
+}
+
+.wrapper .card .question p {
+  text-transform: inherit;
+  color: var(--c-gry);
+}
+
+.wrapper .card .question p a {
+  text-decoration: none;
+  margin-left: .3125rem;
+  color: var(--bg-blue);
+}
+
+.wrapper .card .question::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed var(--c-gry);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.wrapper .card .reg {
+  width: 100%;
+  height: 5.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .625rem;
+}
+
+.wrapper .card .reg p {
+  color: var(--c-black);
+  font-size: .83rem;
+  font-weight: 700;
+}
+
+.wrapper .card .reg .icon i {
+  color: var(--bg-white);
+  margin-top: .3125rem;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2.1875rem;
+  font-size: .6rem;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.wrapper .card .reg .icon i[class *=facebook] {
+  background-color: #3B5998;
+}
+
+.wrapper .card .reg .icon i[class *=twitter] {
+  background-color: #1DA1F2;
+  margin-inline: .25rem;
+}
+
+.wrapper .card .reg .icon i[class *=google] {
+  background-color: #DB4437;
+}
